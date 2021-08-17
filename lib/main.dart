@@ -1,4 +1,6 @@
-import 'package:first/home_page.dart';
+import 'package:first/pages/home_page.dart';
+import 'package:first/pages/login_page.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,17 +10,23 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double day = 300;
-    String name = "Parveen";
-    double pii = 3.14;
-    bool a = true;
-    num abc = 30;
-    var ab = 20;
-    const pi = 3.14;
-    final as = 5;
+    abcd(rupee: 600, thalla: true);
 
     return MaterialApp(
-      home: HomePage(),
+      // home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.red),
+      darkTheme: ThemeData(brightness: Brightness.light),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => LoginPage(),
+        "/home": (context) => HomePage(),
+        "/login": (context) => LoginPage(),
+      },
     );
+  }
+
+  abcd({int rupee = 100, bool thalla = false}) {
+    //ddjjkdjksdlf
   }
 }

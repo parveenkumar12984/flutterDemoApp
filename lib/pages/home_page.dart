@@ -5,15 +5,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     double day = 300;
     String name = "Parveen";
-    double pii = 3.14;
-    bool a = true;
-    num abc = 30;
     var ab = 20;
-    const pi = 3.14;
-    final as = 5;
+
     return Scaffold(
         appBar: AppBar(
-          title: Text("Hello"),
+          title: Text("Dhurina"),
         ),
         body: Center(
           child: Container(
